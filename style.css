@@ -1,0 +1,41 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+    font: normal 15pt Arial;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.685);
+}
+h1,footer{
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+article #num{
+    width: 15%;
+}
+div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div input{
+    width:50px;
+    margin-top:15px;
+}
+
+select{
+    width:150px;
+}
