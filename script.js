@@ -2,8 +2,8 @@ function addsample(){
     num = document.querySelector('input#num')
     res = document.querySelector('select#res')
     n=Number(num.value)
-    if(list.indexOf(n)!=-1 || n<=0){
-        window.alert('Insira um valor diferente')
+    if(list.indexOf(n)!=-1 || n<=0 || num.value>100){
+        window.alert('Invalid insert. Type another number.')
     } else {
         list.push(n)
         let item = document.createElement('option')
