@@ -13,17 +13,21 @@ function addsample(){
     }
 }
 function calc(){
-    main=document.querySelector('section')
+    main=document.querySelector('div#result')
     max = maxNum(list)
     min = minNum(list)
     s = sum(list)
     avg = average(list)
-    
-    main.innerHTML+=`There are ${list.length} numbers in the sample.<br>`
-    main.innerHTML+= `The biggest number of the sample is ${max}.<br>`
-    main.innerHTML+= `The smallest number of the sample is ${min}.<br>`
-    main.innerHTML+= `The sum of all the numbers in the sample is ${s}.<br>`
-    main.innerHTML+= `The arithmetic average of the sample is ${avg}.<br>`
+    if(list==''){
+        window.alert('Insert at least one number to the sample.')
+    } else {
+        main.innerHTML=''
+        main.innerHTML =`There are ${list.length} numbers in the sample.<br>
+                        The biggest number of the sample is ${max}.<br>
+                        The smallest number of the sample is ${min}.<br>
+                        The sum of all the numbers in the sample is ${s}.<br>
+                        The arithmetic average of the sample is ${avg}.`
+    }
 }
 
 function maxNum (x){

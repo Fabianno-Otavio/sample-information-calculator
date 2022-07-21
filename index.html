@@ -14,7 +14,7 @@
     <section>
         <article>
             <p>
-                Number (Between 1 and 100): <input type="number" name="Number" id="num"> 
+                Number (Between 1 and 100): <input type="number" name="Number" id="num" min="0" max="100"> 
                 <input type="button" value="Add" id="add" onclick="addsample()">
             </p>            
         </article>
@@ -22,6 +22,7 @@
             <select name="Samples" id="res" size = "10">
             </select>
             <input type="button" value="Finish" id="finish" onclick="calc()">
+            <div id="result">Insert numbers to the sample and click 'Finish'</div>
         </div>
     </section>
     <footer>
